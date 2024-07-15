@@ -212,4 +212,241 @@
     </main>
 </body>
 </html>
+///css//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+header .name-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header .name-title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.about-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+.about-text {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.expertise-item, .skill-item, .profile-item, .project-item, .achievement-item {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.expertise-item:hover, .skill-item:hover, .profile-item:hover, .project-item:hover, .achievement-item:hover {
+    background: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+
+.expertise-item h3, .skill-item h3, .profile-item h3, .project-item h3, .achievement-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.expertise-item p, .skill-item p, .profile-item p, .project-item p, .achievement-item p {
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    header .name-title h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    header .name-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 30px 10px;
+    }
+}
 
